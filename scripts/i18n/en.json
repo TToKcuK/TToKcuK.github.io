@@ -1,0 +1,11 @@
+const i18nLangs = {
+    greetings: "Hello, my name is ",
+    bioBefore: "i'm ",
+    bioAfter: " wonderful years, I've been speedrunning games, building PCs for games, and much more...",
+    mainTab: "Main",
+    linksTab: "Links",
+    donateTab: "Donate",
+    donate: "Here you can support the streamer, I will be glad for any amount.",
+    links: "here are my social networks",
+    linksProjects: "here you can download games from streams"
+}
