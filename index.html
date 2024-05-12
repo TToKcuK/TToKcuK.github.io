@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeTToKcuK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css">
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/i18n.js"></script>
+</head>
+<body>
+    <nav><img class="logo" src="logo.svg" alt="thejenja logo"><div class="tab">
+        <button class="tablinks active" onclick="openTab(event, 'main')"><img src="svg/header/home.svg"><span data-i18n="mainTab"></span></button>
+        <button class="tablinks" onclick="openTab(event, 'links')"><img src="svg/header/link.svg"><span data-i18n="linksTab"></span></button>
+        <button class="tablinks" onclick="openTab(event, 'donate')"><img src="svg/header/coin.svg"><span data-i18n="donateTab"></span></button>
+      </div>
+    </nav>
+    <lang>
+      <img src="/svg/header/languageNew.svg" alt="language icon">
+      <a href="?lang">Рус</a><a href="?lang=en">Eng</a><a href="?lang=uk">Укр</a>
+    </lang>
+      </div>
+    <content>
+        <noscript><h2>Для корректной работы сайта, необходим JavaScript</h2></noscript>
+        <div id="main" class="tabcontent active">
+            <span data-i18n="greetings" id="greetings"></span><span id="greetings" class="gradientText">Георгий HeT ToKcuK</span><br><span data-i18n="bioBefore" id="bio"></span><span id="age"></span><span data-i18n="bioAfter" id="bio"></span>
+        </div>          
+            <div id="links" class="tabcontent">
+            <h1 data-i18n="linksTab"></h1>
+            <p data-i18n="links"></p>
+            <a href="javascript://" onclick="location.href='http://t.me/hett0kcuk'"class="button" data-tooltip="Telegram"><span class="mdi mdi-telegram"></span></a><a href="javascript://" onclick="location.href='https://www.youtube.com/@thejenja_'"class="button" data-tooltip="Discord"><span class="mdi mdi-discord"></span></a><a href="javascript://" onclick="location.href='http://tiktok.com/@hettokcuk'"class="button" data-tooltip="TikTok"><span class="mdi mdi-music-note"></span><a href="javascript://" onclick="location.href='http://twitch.tv/hettokcuk'"class="button" data-tooltip="Twitch"><span class="mdi mdi-twitch"></span></a><a href="javascript://" onclick="location.href='http://youtube.com/неттоксик'"class="button" data-tooltip="YouTube"><span class="mdi mdi-youtube-play"></span></a>
+            <p data-i18n="linksProjects"></p>
+            <a href="javascript://" onclick="location.href='https://drive.google.com/drive/folders/1a_4qT3wKdAeba-e8IKWc5yy8RdNUx-WU'"class="button" data-tooltip="Grand Theft Auto"><span>GTA</span></a>
+            <div><a href="javascript://" onclick="location.href='https://drive.google.com/drive/folders/1a_4qT3wKdAeba-e8IKWc5yy8RdNUx-WU'"class="button" data-tooltip="Shrek 2"><span>Shrek 2</span></a>
+            </div>
+            </div>
+          <div id="donate" class="tabcontent">
+            <h1 data-i18n="donateTab"></h1>
+            <p data-i18n="donate"></p>
+            <a href="javascript://" onclick="location.href='http://memealerts.com/hettokcuk'"class="button" data-tooltip="MemeAlerts"><span class="mdi mdi-wallet"> MemeAlerts</span></a>
+            <a href="javascript://" onclick="location.href='http://donationalerts.com/r/hettokcuk'"class="button" data-tooltip="DonationAlerts"><span class="mdi mdi-coin"> Don.Alerts</span></a>
+            <a href="javascript://" onclick="location.href='http://new.donatepay.ru/@hettokcuk'"class="button" data-tooltip="DonatePay"><span class="mdi mdi-wallet-giftcard"> DonatePay</span></a>
+            </div>
+    </content>
+    <script>
+      let today = new Date();
+      let bday = new Date("19 February 1990");
+      let age = today.getFullYear() - bday.getFullYear();
+      let m = today.getMonth() - bday.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < bday.getDate())) {age--;}
+      document.getElementById("age").innerHTML = age;
+    </script>
+</body>
+</html>
